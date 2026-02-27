@@ -1,0 +1,272 @@
+<style>
+
+/* ===== STABILIZZAZIONE ===== */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+* { box-sizing: border-box; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== HEADER ===== */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 clamp(20px,6vw,100px);
+background:#fff;
+z-index:1000;
+font-family:'Inconsolata',monospace;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:14px;
+cursor:pointer;
+transition:transform .25s ease;
+}
+
+.logo img{ width:95px; }
+
+.logo:hover{
+transform:translateY(-2px) scale(1.05);
+}
+
+.menu{
+display:flex;
+gap:clamp(20px,3vw,50px);
+align-items:center;
+}
+
+.menu a{
+text-decoration:none;
+color:#000;
+transition:transform .25s ease, letter-spacing .25s ease;
+}
+
+.menu a:hover{
+transform:translateY(-2px) scale(1.05);
+letter-spacing:1px;
+}
+
+.menu img{
+width:24px;
+transition:transform .25s ease;
+}
+
+.menu img:hover{
+transform:translateY(-2px) scale(1.08);
+}
+
+/* ===== HAMBURGER ===== */
+
+.hamburger{
+display:none;
+width:30px;
+height:30px;
+position:relative;
+cursor:pointer;
+}
+
+.hamburger span{
+position:absolute;
+width:26px;
+height:2px;
+background:#000;
+left:2px;
+transition:.3s ease;
+}
+
+.hamburger span:nth-child(1){ top:8px; }
+.hamburger span:nth-child(2){ top:14px; }
+.hamburger span:nth-child(3){ top:20px; }
+
+.hamburger.active span:nth-child(1){
+transform:rotate(45deg);
+top:14px;
+}
+
+.hamburger.active span:nth-child(2){
+opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+transform:rotate(-45deg);
+top:14px;
+}
+
+/* ===== MICRO CHAOS TYPO ===== */
+
+.experimental-word {
+  transition: letter-spacing 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.experimental-shift {
+  letter-spacing: 0.08em;
+}
+
+/* ===== SUBTLE TYPO CHAOS ===== */
+
+.chaos-typography {
+    letter-spacing: 0.06em;
+    transition: letter-spacing 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.mobile-menu{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:#fff;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:40px;
+font-family:'Inconsolata',monospace;
+transform:translateX(100%);
+transition:transform .4s ease;
+z-index:2000;
+}
+.mobile-close{
+    position:absolute;
+    top:25px;
+    right:30px;
+    font-size:28px;
+    cursor:pointer;
+    transition:transform .25s ease;
+}
+
+.mobile-close:hover{
+    transform:rotate(90deg) scale(1.1);
+}
+
+.mobile-menu.active{
+transform:translateX(0);
+}
+
+.mobile-menu a{
+    font-size:26px;
+    color:#000;
+    text-decoration:none;
+    transition:transform .25s ease, letter-spacing .25s ease;
+}
+
+.mobile-menu a:hover{
+    transform:translateX(6px);
+    letter-spacing:1px;
+}
+
+.mobile-menu img{
+    width:28px;
+    height:auto;
+    transition:transform .25s ease, letter-spacing .25s ease;
+}
+
+.mobile-menu img:hover{
+    transform:translateX(6px);
+}
+
+/* ===== HERO ROTATION ===== */
+
+.hero-wrapper{
+margin-top:70px;
+height:100vh;
+}
+
+.stack{
+display:flex;
+flex-direction:column;
+transition:transform 3.2s cubic-bezier(.4,0,.2,1);
+}
+
+.section{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.section-inner{
+transform:translateY(-6%);
+}
+
+/* ===== TYPO ===== */
+
+.quote-wrapper{
+width:42vw;
+margin-left:14vw;
+font-family:'Gloock',serif;
+}
+
+.quote-text{
+font-size:clamp(28px,3.2vw,60px);
+line-height:1.1;
+}
+
+.author{
+margin-top:2vh;
+font-size:clamp(18px,1.9vw,28px);
+opacity:0;
+transform:translateX(80px);
+transition:opacity 1.6s ease, transform 1.6s ease;
+}
+
+.author.visible{
+opacity:1;
+transform:translateX(0);
+}
+
+/* ===== IMAGES ===== */
+
+.afrodite img{ width:clamp(260px,25vw,460px); }
+.testa img{ width:clamp(200px,18vw,340px); }
+.occhio img{ width:clamp(220px,22vw,380px); }
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.menu{ display:none; }
+.hamburger{ display:block; }
+
+.section-inner{ transform:translateY(-7%); }
+
+.quote-wrapper{
+width:88vw;
+margin-left:0;
+padding:0 6vw;
+}
+
+.quote-text{ font-size:7.5vw; }
+.author{ font-size:5.2vw; }
+
+.afrodite img,
+.testa img,
+.occhio img{
+width:70vw;
+max-height:65vh;
+}
+
+}
+
+</style>
