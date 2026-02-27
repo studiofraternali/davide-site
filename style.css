@@ -225,8 +225,8 @@ line-height:1.1;
 .author{
 margin-top:2vh;
 font-size:clamp(18px,1.9vw,28px);
-opacity:0;
-transform:translateX(80px);
+opacity:1;
+transform:none;
 transition:opacity 1.6s ease, transform 1.6s ease;
 }
 
