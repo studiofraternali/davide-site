@@ -28,7 +28,7 @@ function showSection(i){
     if(visibleSection){
         const author = visibleSection.querySelector(".author");
         if(author){
-            setTimeout(()=> author.classList.add("visible"),1200);
+    
         }
     }
 }
