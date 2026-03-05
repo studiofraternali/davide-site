@@ -22,13 +22,35 @@ window.addEventListener("load", function(){
 
     // AUTORE ANIMATO
 
-    authors.forEach((author, i) => {
+  const sections = document.querySelectorAll(".section");
 
-        setTimeout(()=>{
-            author.classList.add("visible");
-        }, 900 + (i * 200));
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const author = entry.target.querySelector(".author");
+
+            if(author){
+
+                setTimeout(()=>{
+                    author.classList.add("visible");
+                }, 800);
+
+            }
+
+        }
 
     });
+
+},{
+    threshold:0.6
+});
+
+sections.forEach(section=>{
+    observer.observe(section);
+});
 
 
     // MENU MOBILE
