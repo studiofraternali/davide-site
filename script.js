@@ -2,32 +2,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const authors = document.querySelectorAll(".author");
 
-    authors.forEach((author) => {
+    authors.forEach((author, index) => {
 
-        const observer = new IntersectionObserver(entries => {
-
-            entries.forEach(entry => {
-
-                if(entry.isIntersecting){
-
-                    setTimeout(()=>{
-                        author.classList.add("visible");
-                    }, 800);
-
-                }
-
-            });
-
-        },{
-            threshold:0.5
-        });
-
-        observer.observe(author);
+        setTimeout(()=>{
+            author.classList.add("visible");
+        }, 800 + (index * 200));
 
     });
 
 
-    // ===== MENU MOBILE =====
+    // MENU MOBILE
 
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
