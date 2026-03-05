@@ -6,6 +6,8 @@ window.addEventListener("load", function(){
 
     let index = 0;
 
+showSection(0);
+
     function showSection(i){
 
         stack.style.transform = "translateY(-" + (i * 100) + "vh)";
