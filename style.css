@@ -206,7 +206,7 @@ header{
     transition:opacity 1.2s ease, transform 1.2s ease;
 }
 
-.section.visible .author{
+.author.visible{
     opacity:1;
     transform:translateX(0);
 }
