@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+window.addEventListener("load", function(){
 
     const authors = document.querySelectorAll(".author");
 
@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
         setTimeout(()=>{
             author.classList.add("visible");
-        }, 800 + (index * 200));
+        }, 900 + (index * 200));
 
     });
 
 
-    // MENU MOBILE
+    // ===== MENU MOBILE =====
 
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
