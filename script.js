@@ -6,7 +6,25 @@ window.addEventListener("load", function(){
 
     let index = 0;
 
-    function rotateSections(){
+    function showSection(i){
+
+        stack.style.transform = "translateY(-" + (i * 100) + "vh)";
+
+        // nasconde tutti gli autori
+        authors.forEach(a => a.classList.remove("visible"));
+
+        // mostra autore della sezione attiva
+        const author = sections[i].querySelector(".author");
+
+        if(author){
+            setTimeout(()=>{
+                author.classList.add("visible");
+            },800);
+        }
+
+    }
+
+    function rotate(){
 
         index++;
 
@@ -14,43 +32,17 @@ window.addEventListener("load", function(){
             index = 0;
         }
 
-        stack.style.transform = "translateY(-" + (index * 100) + "vh)";
+        showSection(index);
+
     }
 
-    setInterval(rotateSections, 5000);
+    setInterval(rotate, 5000);
 
-
-    // AUTORE ANIMATO
-
-  const sections = document.querySelectorAll(".section");
-
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-
-            const author = entry.target.querySelector(".author");
-
-            if(author){
-
-                setTimeout(()=>{
-                    author.classList.add("visible");
-                }, 800);
-
-            }
-
-        }
-
-    });
-
-},{
-    threshold:0.6
-});
-
-sections.forEach(section=>{
-    observer.observe(section);
-});
+    // mostra autore della prima sezione
+    setTimeout(()=>{
+        const firstAuthor = sections[0].querySelector(".author");
+        if(firstAuthor) firstAuthor.classList.add("visible");
+    },800);
 
 
     // MENU MOBILE
