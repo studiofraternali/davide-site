@@ -1,25 +1,14 @@
-// ===== ANIMAZIONE AUTORE ALLO SCROLL =====
+// ===== AUTORE DOPO LA CITAZIONE =====
 
-const sections = document.querySelectorAll(".section");
+const authors = document.querySelectorAll(".author");
 
-const observer = new IntersectionObserver(entries => {
+authors.forEach((author, i) => {
 
-    entries.forEach(entry => {
+    setTimeout(()=>{
+        author.classList.add("visible");
+    }, 1200 + (i * 300));
 
-        if(entry.isIntersecting){
-            entry.target.classList.add("visible");
-        }
-
-    });
-
-},{
-    threshold:0.6
 });
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-
 
 
 // ===== MENU MOBILE =====
