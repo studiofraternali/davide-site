@@ -23,7 +23,7 @@ if(author){
 
     setTimeout(()=>{
         author.classList.add("visible");
-    },800);
+    },3200);
 
 }
 
