@@ -199,11 +199,11 @@ header{
 }
 
 .author{
-    margin-top:3vh;
-    font-size:clamp(16px,1.5vw,22px);
-    opacity:0.55;
-    letter-spacing:0.06em;
-    font-style:italic;
+    margin-top:2vh;
+    font-size:clamp(18px,1.9vw,28px);
+    opacity:0;
+    transform:translateX(12px);
+    transition:opacity 1s ease, transform 1s ease;
 }
 
 .author.visible{
