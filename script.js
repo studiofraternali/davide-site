@@ -12,19 +12,20 @@ showSection(0);
 
         stack.style.transform = "translateY(-" + (i * 100) + "vh)";
 
-        // nasconde tutti gli autori
-        authors.forEach(a => a.classList.remove("visible"));
+ authors.forEach(a => a.classList.remove("visible"));
 
-        // mostra autore della sezione attiva
-        const author = sections[i].querySelector(".author");
+const author = sections[i].querySelector(".author");
 
-        if(author){
-            setTimeout(()=>{
-                author.classList.add("visible");
-            },800);
-        }
+if(author){
 
-    }
+    // forza il browser a registrare lo stato iniziale
+    author.offsetHeight;
+
+    setTimeout(()=>{
+        author.classList.add("visible");
+    },800);
+
+}
 
     function rotate(){
 
