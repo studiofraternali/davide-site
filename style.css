@@ -201,8 +201,15 @@ header{
 .author{
     margin-top:2vh;
     font-size:clamp(18px,1.9vw,28px);
+    opacity:0;
+    transform:translateX(10px);
+    transition:opacity 1.2s ease, transform 1.2s ease;
 }
 
+.section.visible .author{
+    opacity:1;
+    transform:translateX(0);
+}
 
 /* ===== IMAGES ===== */
 
