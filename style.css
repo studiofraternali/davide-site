@@ -203,12 +203,15 @@ header{
     font-size:clamp(18px,1.9vw,28px);
     opacity:0;
     transform:translateX(10px);
-    transition:opacity 1.2s ease, transform 1.2s ease;
+    animation: authorFade 1.2s ease forwards;
+    animation-delay:1s;
 }
 
-.author.visible{
-    opacity:1;
-    transform:translateX(0);
+@keyframes authorFade{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
 }
 
 /* ===== IMAGES ===== */
