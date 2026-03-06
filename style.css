@@ -245,6 +245,7 @@ header{
 
 .afrodite img{
     width:clamp(260px,25vw,460px);
+    animation: bloodPulse 6s ease-in-out infinite;
 }
 
 .testa img{
