@@ -37,7 +37,18 @@ window.addEventListener("load", function(){
 
     }
 
-    setInterval(rotate, 5600);
+    function scheduleRotation(){
+
+    const randomDelay = 5200 + Math.random() * 1200;
+
+    setTimeout(()=>{
+        rotate();
+        scheduleRotation();
+    }, randomDelay);
+
+}
+
+scheduleRotation();
 
     showAuthor(stack.children[0]);
 
