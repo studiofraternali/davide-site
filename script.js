@@ -37,7 +37,7 @@ window.addEventListener("load", function(){
 
     }
 
-    setInterval(rotate, 5000);
+    setInterval(rotate, 5600);
 
     showAuthor(stack.children[0]);
 
