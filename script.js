@@ -52,4 +52,24 @@ scheduleRotation();
 
     showAuthor(stack.children[0]);
 
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileClose = document.getElementById("mobileClose");
+
+if(hamburger && mobileMenu){
+
+    hamburger.addEventListener("click", function(){
+        mobileMenu.classList.add("active");
+    });
+
+}
+
+if(mobileClose){
+
+    mobileClose.addEventListener("click", function(){
+        mobileMenu.classList.remove("active");
+    });
+
+}    
+
 });
