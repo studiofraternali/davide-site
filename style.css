@@ -256,11 +256,11 @@ header{
 @keyframes subtleChaos{
 
     0%{
-        transform:translateY(-6%) scale(1.01) rotate(0.15deg);
+        transform:translateY(-6%) scale(1.04) rotate(0.2deg);
     }
 
-    40%{
-        transform:translateY(-6%) scale(1);
+    45%{
+        transform:translateY(-6%) scale(1.015);
     }
 
     100%{
