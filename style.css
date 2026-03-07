@@ -105,6 +105,11 @@ header{
     transition:transform .35s ease;
 }
 
+/* riduzione icona instagram */
+.menu img[src="logo_instagram.svg"]{
+    width:23px;
+}
+
 .menu img[src="logo_instagram.svg"]{
     width:23px;
 }
