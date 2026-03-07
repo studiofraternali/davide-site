@@ -163,13 +163,20 @@ header{
     position:absolute;
     top:28px;
     right:32px;
-    font-size:36px;
+    font-size:38px;
     cursor:pointer;
-    transition:transform .35s ease;
+    opacity:0;
+    transform:rotate(-90deg);
+    transition:opacity .35s ease, transform .45s cubic-bezier(.4,0,.2,1);
+}
+
+.mobile-menu.active .mobile-close{
+    opacity:1;
+    transform:rotate(0deg);
 }
 
 .mobile-close:hover{
-    transform:rotate(90deg) scale(1.15);
+    transform:rotate(90deg) scale(1.12);
 }
 
 .mobile-menu{
