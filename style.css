@@ -326,26 +326,28 @@ header{
 /* ===== CONTACT PAGE ===== */
 
 .contact-page{
-max-width:600px;
-margin:120px auto;
+max-width:520px;
+margin:140px auto;
 padding:0 30px;
 font-family:'Inconsolata', monospace;
 }
 
 .contact-page h1{
 font-family:'Gloock', serif;
-font-size:40px;
+font-size:36px;
 margin-bottom:40px;
+text-align:left;
 }
 
 .contact-page form{
 display:flex;
 flex-direction:column;
-gap:20px;
+gap:18px;
 }
 
 .contact-page input,
 .contact-page textarea{
+width:100%;
 border:1px solid #000;
 padding:12px;
 font-family:'Inconsolata', monospace;
@@ -359,9 +361,10 @@ resize:vertical;
 }
 
 .contact-page button{
+align-self:flex-start;
 border:1px solid #000;
 background:#fff;
-padding:12px;
+padding:10px 20px;
 cursor:pointer;
 transition:background .2s ease,color .2s ease;
 }
