@@ -53,7 +53,7 @@ header{
     font-family:'Inconsolata', monospace;
     text-decoration:none;
     color:#000;
-    font-size:20px;
+    position:relative;
     transition:transform .25s ease, letter-spacing .25s ease;
 }
 
