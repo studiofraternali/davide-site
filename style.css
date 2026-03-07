@@ -250,7 +250,7 @@ header{
 
 .section-inner{
     transform:translateY(-6%);
-    animation: subtleChaos 1.6s ease;
+    animation: subtleChaos 2.4s cubic-bezier(.4,0,.2,1);
 }
 
 @keyframes subtleChaos{
