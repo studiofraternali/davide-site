@@ -57,9 +57,19 @@ header{
     transition:transform .25s ease, letter-spacing .25s ease;
 }
 
-.logo-text:hover{
-    transform:translateY(-2px);
-    letter-spacing:1px;
+.logo-text::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0%;
+    height:1px;
+    background:#000;
+    transition:width .35s ease;
+}
+
+.logo-text:hover::after{
+    width:100%;
 }
 
 .menu{
