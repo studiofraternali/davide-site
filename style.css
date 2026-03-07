@@ -211,6 +211,11 @@ header{
     transition:transform .25s ease;
 }
 
+/* riduzione icona instagram */
+.mobile-menu img[src="logo_instagram.svg"]{
+    width:26px;
+}
+
 .mobile-menu img:hover{
     transform:translateX(6px);
 }
