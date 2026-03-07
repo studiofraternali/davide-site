@@ -167,7 +167,7 @@ header{
     cursor:pointer;
     opacity:0;
     transform:rotate(-90deg);
-    transition:opacity .35s ease, transform .45s cubic-bezier(.4,0,.2,1);
+    transition:opacity .6s ease, transform .8s cubic-bezier(.4,0,.2,1);
 }
 
 .mobile-menu.active .mobile-close{
@@ -177,6 +177,7 @@ header{
 
 .mobile-close:hover{
     transform:rotate(90deg) scale(1.12);
+    transition:transform .6s ease;
 }
 
 .mobile-menu{
