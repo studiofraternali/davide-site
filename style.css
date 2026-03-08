@@ -343,9 +343,10 @@ header{
         display:block;
     }
 
-    .section-inner{
-    transform:translateY(-16%);
-   }
+    .section{
+    align-items:flex-start;
+    padding-top:18vh;
+}
 
     .quote-wrapper{
         width:88vw;
