@@ -252,10 +252,6 @@ header{
     transform:translateY(-6%);
 }
 
-.section.active .section-inner{
-    animation: subtleChaos 2.4s cubic-bezier(.4,0,.2,1);
-}
-
 @keyframes subtleChaos{
 
     0%{
