@@ -33,6 +33,11 @@ window.addEventListener("load", function(){
 
             stack.appendChild(first);
 
+// reset animazione illustrazione
+const sections = document.querySelectorAll(".section");
+sections.forEach(sec => sec.classList.remove("active"));
+stack.children[0].classList.add("active");      
+
         },3200);
 
     }
