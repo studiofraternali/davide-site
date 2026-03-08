@@ -344,8 +344,8 @@ header{
     }
 
     .section-inner{
-        transform:translateY(-7%);
-    }
+    transform:translateY(-10%);
+   }
 
     .quote-wrapper{
         width:88vw;
