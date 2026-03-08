@@ -333,8 +333,6 @@ header{
 
 /* ===== MOBILE ===== */
 
-/* ===== MOBILE ===== */
-
 @media (max-width:768px){
 
 .menu{
@@ -376,6 +374,10 @@ header{
     margin:auto;
 }
 
+.section-inner{
+    transform:translateY(-6%);
+}
+    
 }
 
 /* ===== MOBILE MENU ENTRY ANIMATION ===== */
