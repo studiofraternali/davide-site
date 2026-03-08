@@ -362,11 +362,15 @@ header{
     }
 
     .afrodite img,
-    .testa img,
     .occhio img{
-        width:70vw;
-        max-height:65vh;
-    }
+    width:70vw;
+    max-height:65vh;
+}
+
+    .testa img{
+    width:63vw;
+    max-height:65vh;
+}
 
 }
 
