@@ -373,6 +373,10 @@ header{
     max-height:65vh;
 }
 
+.section{
+    justify-content:flex-start;
+    padding-top:12vh;
+    
 }
 
 /* ===== MOBILE MENU ENTRY ANIMATION ===== */
