@@ -333,7 +333,9 @@ header{
 
 /* ===== MOBILE ===== */
 
-@media(max-width:768px){
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
 
 .menu{
     display:none;
@@ -343,17 +345,11 @@ header{
     display:block;
 }
 
-/* posizione verticale contenuti */
-
-.section-inner{
-    transform:translateY(-12%);
-}
-
 /* citazioni */
 
 .quote-wrapper{
     width:88vw;
-    margin-left:0;
+    margin:0 auto;
     padding:0 6vw;
 }
 
@@ -371,11 +367,13 @@ header{
 .occhio img{
     width:70vw;
     max-height:65vh;
+    margin:auto;
 }
 
 .testa img{
     width:63vw;
     max-height:65vh;
+    margin:auto;
 }
 
 }
