@@ -83,3 +83,13 @@ mobileMenu.classList.remove("active");
 }
 
 });
+
+/* CONTACT FADE */
+
+const contactPage = document.querySelector(".contact-page");
+
+if(contactPage){
+setTimeout(()=>{
+contactPage.classList.add("visible");
+},200);
+}
