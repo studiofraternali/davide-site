@@ -479,3 +479,46 @@ transition:background .2s ease,color .2s ease;
 background:#000;
 color:#fff;
 }
+
+/* ===== CONTACT CINEMATIC ENTRY ===== */
+
+.contact-page h1{
+opacity:0;
+transform:translateY(10px);
+animation: contactTitle 1.2s ease forwards;
+}
+
+.contact-intro{
+opacity:0;
+transform:translateY(10px);
+animation: contactIntro 1.2s ease forwards;
+animation-delay:.35s;
+}
+
+.contact-page form{
+opacity:0;
+transform:translateY(10px);
+animation: contactForm 1.4s ease forwards;
+animation-delay:.7s;
+}
+
+@keyframes contactTitle{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes contactIntro{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes contactForm{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
