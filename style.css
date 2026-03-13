@@ -55,6 +55,7 @@ header{
     color:#000;
     position:relative;
     transition:transform .25s ease, letter-spacing .25s ease;
+    white-space:nowrap;
 }
 
 .logo-text::after{
