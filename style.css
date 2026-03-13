@@ -72,6 +72,10 @@ header{
     width:100%;
 }
 
+.logo span{
+    white-space:nowrap;
+}
+
 .menu{
     display:flex;
     gap:clamp(20px,3vw,50px);
