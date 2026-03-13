@@ -1,80 +1,58 @@
 window.addEventListener("load", function(){
 
-    const stack = document.querySelector(".stack");
-    const authors = document.querySelectorAll(".author");
+/* ===== HOMEPAGE ROTATION ===== */
 
-    function showAuthor(section){
+const stack = document.querySelector(".stack");
 
-        authors.forEach(a => a.classList.remove("visible"));
+if(stack){
 
-        const author = section.querySelector(".author");
+const authors = document.querySelectorAll(".author");
 
-        if(author){
-            setTimeout(()=>{
-                author.classList.add("visible");
-            },800);
-        }
+function showAuthor(section){
 
-    }
+authors.forEach(a => a.classList.remove("visible"));
 
-    function rotate(){
+const author = section.querySelector(".author");
 
-        const first = stack.children[0];
+if(author){
+setTimeout(()=>{
+author.classList.add("visible");
+},800);
+}
 
-        stack.style.transition = "transform 3.2s cubic-bezier(.4,0,.2,1)";
-        stack.style.transform = "translateY(-100vh)";
+}
 
-        showAuthor(stack.children[1]);
+function rotate(){
 
-        setTimeout(()=>{
+const first = stack.children[0];
 
-            stack.style.transition = "none";
-            stack.style.transform = "translateY(0)";
+stack.style.transition = "transform 3.2s cubic-bezier(.4,0,.2,1)";
+stack.style.transform = "translateY(-100vh)";
 
-            stack.appendChild(first);
+showAuthor(stack.children[1]);
 
-// reset animazione illustrazione
-const sections = document.querySelectorAll(".section");
-sections.forEach(sec => sec.classList.remove("active"));
-stack.children[0].classList.add("active");      
+setTimeout(()=>{
 
-        },3200);
+stack.style.transition = "none";
+stack.style.transform = "translateY(0)";
 
-    }
+stack.appendChild(first);
 
-    function scheduleRotation(){
+},3200);
 
-    const randomDelay = 5200 + Math.random() * 1200;
+}
 
-    setTimeout(()=>{
-        rotate();
-        scheduleRotation();
-    }, randomDelay);
+function scheduleRotation(){
+
+const randomDelay = 5200 + Math.random()*1200;
+
+setTimeout(()=>{
+rotate();
+scheduleRotation();
+},randomDelay);
 
 }
 
 scheduleRotation();
 
-    showAuthor(stack.children[0]);
-
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
-const mobileClose = document.getElementById("mobileClose");
-
-if(hamburger && mobileMenu){
-
-    hamburger.addEventListener("click", function(){
-        mobileMenu.classList.add("active");
-    });
-
-}
-
-if(mobileClose){
-
-    mobileClose.addEventListener("click", function(){
-        mobileMenu.classList.remove("active");
-    });
-
-}    
-
-});
+show
