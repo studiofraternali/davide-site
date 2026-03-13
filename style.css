@@ -462,3 +462,14 @@ transition:background .2s ease,color .2s ease;
 background:#000;
 color:#fff;
 }
+
+.contact-intro{
+margin-bottom:40px;
+font-size:16px;
+line-height:1.6;
+max-width:420px;
+}
+
+.contact-intro span{
+opacity:0.6;
+}
