@@ -55,7 +55,10 @@ scheduleRotation();
 
 scheduleRotation();
 
-show
+showAuthor(stack.children[0]);
+
+}
+
 
 /* ===== MOBILE MENU ===== */
 
@@ -78,3 +81,5 @@ mobileMenu.classList.remove("active");
 });
 
 }
+
+});
