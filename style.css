@@ -421,12 +421,6 @@ padding:0 30px;
 font-family:'Inconsolata', monospace;
 }
 
-.contact-page{
-max-width:520px;
-margin:140px auto;
-padding:0 30px;
-font-family:'Inconsolata', monospace;
-
 opacity:0;
 transform:translateY(20px);
 animation: contactFade 1.6s ease forwards;
