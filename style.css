@@ -421,6 +421,26 @@ padding:0 30px;
 font-family:'Inconsolata', monospace;
 }
 
+opacity:0;
+transform:translateY(20px);
+animation: contactFade 1.6s ease forwards;
+animation-delay:.4s;
+}
+
+@keyframes contactFade{
+
+0%{
+opacity:0;
+transform:translateY(20px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
 .contact-page h1{
 font-family:'Inconsolata', monospace;
 font-size:32px;
