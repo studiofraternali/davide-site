@@ -495,7 +495,7 @@ animation-delay:.35s;
 .contact-page form{
 opacity:0;
 transform:translateY(10px);
-animation: contactForm 1.4s ease forwards;
+animation: contactForm 1.2s ease forwards;
 animation-delay:.7s;
 }
 
