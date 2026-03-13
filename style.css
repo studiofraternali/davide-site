@@ -419,9 +419,6 @@ max-width:520px;
 margin:140px auto;
 padding:0 30px;
 font-family:'Inconsolata', monospace;
-
-animation: contactFade 1.8s ease forwards;
-animation-delay: .35s;
 }
 
 @keyframes contactFade{
