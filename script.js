@@ -79,6 +79,7 @@ if(mobileClose && mobileMenu){
 
 mobileClose.addEventListener("click", function(){
 mobileMenu.classList.remove("active");
+hamburger.classList.remove("active");
 });
 
 }
