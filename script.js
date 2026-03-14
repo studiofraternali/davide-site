@@ -70,6 +70,7 @@ if(hamburger && mobileMenu){
 
 hamburger.addEventListener("click", function(){
 mobileMenu.classList.add("active");
+hamburger.classList.add("active");
 });
 
 }
