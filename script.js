@@ -95,3 +95,35 @@ setTimeout(()=>{
 contactPage.classList.add("visible");
 },200);
 }
+
+/* ===== PAGE TRANSITION ===== */
+
+const transition = document.getElementById("pageTransition");
+
+document.querySelectorAll("a").forEach(link => {
+
+const href = link.getAttribute("href");
+
+if(!href) return;
+
+if(
+href.startsWith("#") ||
+href.startsWith("mailto:") ||
+link.target === "_blank"
+){
+return;
+}
+
+link.addEventListener("click", function(e){
+
+e.preventDefault();
+
+transition.classList.add("active");
+
+setTimeout(()=>{
+window.location = href;
+},650);
+
+});
+
+});
