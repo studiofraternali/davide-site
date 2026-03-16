@@ -649,31 +649,3 @@ opacity:1;
 transform:translateY(0);
 }
 
-
-/* ===== CONTACT SUCCESS CINEMATIC ===== */
-
-.contact-success{
-margin-top:36px;
-display:flex;
-align-items:center;
-gap:10px;
-font-family:'Inconsolata', monospace;
-font-size:16px;
-opacity:0;
-transform:translateY(14px) scale(.98);
-transition:opacity .9s ease, transform .9s cubic-bezier(.4,0,.2,1);
-}
-
-.contact-success.visible{
-opacity:1;
-transform:translateY(0) scale(1);
-}
-
-.success-icon{
-font-size:18px;
-opacity:.9;
-}
-
-.success-text{
-letter-spacing:.5px;
-}
