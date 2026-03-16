@@ -631,3 +631,20 @@ border:none;
 border-top:1px solid #000;
 width:60px;
 }
+
+
+/* ===== CONTACT SUCCESS ===== */
+
+.contact-success{
+margin-top:30px;
+font-family:'Inconsolata', monospace;
+font-size:16px;
+opacity:0;
+transform:translateY(10px);
+transition:opacity .6s ease, transform .6s ease;
+}
+
+.contact-success.visible{
+opacity:1;
+transform:translateY(0);
+}
