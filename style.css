@@ -539,3 +539,45 @@ z-index:5000;
 .page-transition.active{
 opacity:1;
 }
+
+
+/* ===== FILM PAGE ===== */
+
+.film-page{
+max-width:900px;
+margin:140px auto;
+padding:0 30px;
+font-family:'Inconsolata', monospace;
+}
+
+.film-page h1{
+font-size:32px;
+margin-bottom:60px;
+}
+
+.film-grid{
+display:flex;
+flex-direction:column;
+gap:28px;
+}
+
+.film-item{
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid #000;
+padding-bottom:8px;
+transition:transform .25s ease;
+}
+
+.film-item:hover{
+transform:translateX(6px);
+}
+
+.film-title{
+font-size:18px;
+}
+
+.film-meta{
+font-size:14px;
+opacity:.7;
+}
